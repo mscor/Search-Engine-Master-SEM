@@ -12,7 +12,7 @@ def bannerx():
 	return banner
 
 def argsload():
-	parser = argparse.ArgumentParser(description='SEMaster is a very efective and helpful tool for exploring search engins for BlackHat, SEO, exploiting, crwoling... etc. This tool uses Google, Bing, Yahoo, Ask, Aol, Dogpile, Ixquick, Entirewebs...', epilog="\033[1mCoded by @\033[1;31m3\033[1;36mTurr \033[0m")
+	parser = argparse.ArgumentParser(description='SEMaster is a very efective and helpful tool for exploring search engins for BlackHat, SEO, exploiting, crwoling... etc. This tool uses Google, Bing, Yahoo, Ask, Aol, Sogou, Dogpile, Ixquick, Entirewebs...', epilog="\033[1mCoded by @\033[1;31m3\033[1;36mTurr \033[0m")
 
 	parser.add_argument( '-d', '--dork', required=True, default=None, help='dork, query to search')
 	parser.add_argument( '-p', required=False, type=int, default=None , help='number of pages to search, defualt is 1')
