@@ -2,7 +2,7 @@ import urllib, req, re, sout
 
 def bingsearch(query, start=0):
 	sout.write("Exteracting 25% Bing ...        ")
-	p = urllib.urlencode({'q' : query, 'first' : start })
+	p = urllib.urlencode({'q' : query, 'first' : start , 'count': '50'})
 	s = req.curllib("http://www.bing.com/search", p)
 
 	if s != "Error":
