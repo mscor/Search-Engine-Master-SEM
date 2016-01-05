@@ -2,7 +2,7 @@ import sys
 import os
 import time
 
-import aol, ask, bing, dogp, entirwebs, google, ixquick, req, yahoo, sout
+import aol, ask, bing, dogp, entirwebs, google, ixquick, req, yahoo, sogou, sout
 
 
 def search( q, start=0, p=0):
