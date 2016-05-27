@@ -6,10 +6,10 @@ def bingsearch(query, start=0):
 	s = req.curllib("http://www.bing.com/search", p)
 
 	if s != "Error":
-		if "<li class=\"b_algo\"><h2>" in req :
+		if '<li class="b_algo"><h2>' in s :
 			s = re.findall('<li class="b_algo"><h2><a href="(.*?)" ',s)
 			return s
-        elif "</span><h2><a href=" in req :
+        elif '</span><h2><a href=' in s :
 			s = re.findall('<li class="b_algo"><h2><a href="(.*?)" ',s)
 			return s
 	else:
